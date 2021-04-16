@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Instagram Photo Feed (with Bootstrap)</title>
+    <!--Font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--FontAwsome-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Iconos Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!--Mi CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-12 navbar navbar-light bg-light p-4 ">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <div class="buttons-nav d-flex">
+                    <button type="button" class="btn btn-success">Create new post</button>
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-gear-fill"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center p-4">
+                <button type="button" class="btn btn-secondary mr-2"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+                <button type="button" class="btn btn-light" type="button" data-toggle="collapse"
+                    data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bi bi-square-fill"></i>
+                </button>
+
+            </div>
+        </div>
+        <div class="row gallery">
+            <div class="col-4">
+                <img src="https://www.zooplus.es/magazine/wp-content/uploads/2018/04/fotolia_169457098.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://notasdemascotas.com/wp-content/uploads/2015/02/que-hacer-cuando-traes-un-gatito-a-casa-1280x720.jpg"
+                    alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://cdn.nutricionistadeperros.com/wp-content/uploads/2018/01/cute-3106473_640.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://www.greenqueen.com.hk/wp-content/uploads/2020/01/lazy-cat-kitchen-vegan-larb.jpg"
+                    alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/1472483520-springtacos-1572537127.jpg?crop=1.00xw:0.672xh;0,0.156xh&resize=640:*"
+                    alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/07/25/10/istock-1152435151.jpg?width=1200"
+                    alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://static.educalingo.com/img/en/800/landscape.jpg" alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://i.natgeofe.com/n/2a832501-483e-422f-985c-0e93757b7d84/6.jpg?w=636&h=477" alt="">
+            </div>
+            <div class="col-4">
+                <img src="https://i.pinimg.com/originals/89/9c/61/899c6181997271a0d39bfe611fdf7591.jpg" alt="">
+            </div>
+        </div>
+        <div class="row"></div>
+    </div>
+
+    <!--Posts-->
+    <div class="container-feed collapse" id="collapseExample">
+        <div class="container-post">
+            <div class="post-header">
+                <div class="user">
+                    <img src="https://image.flaticon.com/icons/png/512/121/121537.png" alt="">
+                    <h3>HTML5 <span>Rigoberto</span></h3>
+                </div>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="post-pic">
+                <img src="https://www.zooplus.es/magazine/wp-content/uploads/2018/04/fotolia_169457098.jpg" alt="">
+            </div>
+            <div class="post-footer">
+                <div class="icons">
+                    <div class="actions">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="likes">
+                    <p>Liked by <span>4GeeksAcademy</span>,<span> html5</span>,<span> Web</span>, and <span>100,00
+                            others</span></p>
+                </div>
+                <div class="txt">
+                    <p> <span>Rigoberto</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut debitis
+                        veniam
+                        corporis vel molestiae. Nisi corrupti qui atque vero ducimus voluptate explicabo obcaecati,
+                        molestiae omnis odio, nulla quod? Saepe, accusantium.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-post">
+            <div class="post-header">
+                <div class="user">
+                    <img src="https://image.flaticon.com/icons/png/512/121/121537.png" alt="">
+                    <h3>HTML5 <span>Rigoberto</span></h3>
+                </div>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="post-pic">
+                <img src="https://notasdemascotas.com/wp-content/uploads/2015/02/que-hacer-cuando-traes-un-gatito-a-casa-1280x720.jpg"
+                    alt="">
+            </div>
+            <div class="post-footer">
+                <div class="icons">
+                    <div class="actions">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="likes">
+                    <p>Liked by <span>4GeeksAcademy</span>,<span> html5</span>,<span> Web</span>, and <span>100,00
+                            others</span></p>
+                </div>
+                <div class="txt">
+                    <p> <span>Rigoberto</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut debitis
+                        veniam
+                        corporis vel molestiae. Nisi corrupti qui atque vero ducimus voluptate explicabo obcaecati,
+                        molestiae omnis odio, nulla quod? Saepe, accusantium.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-post">
+            <div class="post-header">
+                <div class="user">
+                    <img src="https://image.flaticon.com/icons/png/512/121/121537.png" alt="">
+                    <h3>HTML5 <span>Rigoberto</span></h3>
+                </div>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="post-pic">
+                <img src="https://cdn.nutricionistadeperros.com/wp-content/uploads/2018/01/cute-3106473_640.jpg" alt="">
+            </div>
+            <div class="post-footer">
+                <div class="icons">
+                    <div class="actions">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="likes">
+                    <p>Liked by <span>4GeeksAcademy</span>,<span> html5</span>,<span> Web</span>, and <span>100,00
+                            others</span></p>
+                </div>
+                <div class="txt">
+                    <p> <span>Rigoberto</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut debitis
+                        veniam
+                        corporis vel molestiae. Nisi corrupti qui atque vero ducimus voluptate explicabo obcaecati,
+                        molestiae omnis odio, nulla quod? Saepe, accusantium.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--FontAwsome-->
+    <script src="https://kit.fontawesome.com/e4325fd571.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
